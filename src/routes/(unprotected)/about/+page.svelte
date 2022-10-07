@@ -11,7 +11,7 @@
 	{/if}
 
 	{#if $page.data.user}
-		<p>Hi, {$page.data.user}. This is the about page.</p>
+		<p>Hi, {$page.data.user.email}. This is the about page.</p>
 		<p>This will show up only when a user IS signed in.</p>
 	{/if}
 </section>
