@@ -114,7 +114,7 @@
 						>Sign in</button
 					>
 					<div class="text-sm mt-4">
-						<a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"
+						<a href="/signup" class="font-medium text-indigo-600 hover:text-indigo-500"
 							>Need an account?</a
 						>
 					</div>
