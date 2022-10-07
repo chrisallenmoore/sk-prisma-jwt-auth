@@ -2,7 +2,9 @@
 
 This is a starter project for using SvelteKit with JWT auth.
 
-It has everything you need to have authentication working.
+It has everything you need to have JWT authentication working with Prisma and SqlLite.
+
+Tailwind CSS is also setup and is used for styling.
 
 ## First, install npm Dependencies
 
@@ -25,6 +27,17 @@ npx prisma db push
 ```bash
 # from the root directory
 npx prisma studio
+```
+
+## Next add your jwt access secret to your .env file that was created by Prisma
+
+In the .env file add the VITE_JWT_ACCESS_SECRET. Google JWT token generator if you need help with this.
+
+_Note: the .env file should be in your gitignore file. You don't want to save it to your repository for everyone to see._
+
+```env
+DATABASE_URL="file:./dev.db"
+VITE_JWT_ACCESS_SECRET="<your jwt access secret>"
 ```
 
 ## Developing
