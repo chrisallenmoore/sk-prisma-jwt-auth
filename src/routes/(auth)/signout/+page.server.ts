@@ -3,7 +3,7 @@ import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ cookies, locals }) => {
 	/**
-	 * Redirect to Home page if not logged in
+	 * Redirect to Home page if not signed in
 	 */
 	if (!locals.user) {
 		throw redirect(302, '/');
