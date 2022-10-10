@@ -3,18 +3,17 @@
 @tailwind utilities;
 
 /* Global Styles */
+.body {
+	@apply text-gray-900;
+}
 .page-px {
 	@apply px-4 sm:px-6;
 }
 
-.header-py {
-	@apply py-6;
-}
-
 .section-py {
-	@apply py-10;
+	@apply py-12;
 }
 
 .error {
-	@apply text-indigo-600;
+	@apply text-violet-600;
 }
