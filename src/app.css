@@ -6,6 +6,7 @@
 .body {
 	@apply text-gray-900;
 }
+
 .page-px {
 	@apply px-4 sm:px-6;
 }
