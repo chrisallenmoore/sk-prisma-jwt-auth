@@ -94,7 +94,26 @@
 					</div>
 				</div>
 
-				<!-- TODO: Add password confirmation -->
+				<!-- TODO: After making this work with the new SvelteKit forms, Add password confirmation -->
+				<!-- <div>
+					{#if form?.passwordConfirm}
+						<p class="error">Password doesn't match.</p>
+					{/if}
+
+					<label for="password-confirm" class="block text-sm font-medium text-gray-700">
+						Confirm Password</label
+					>
+					<div class="mt-1">
+						<input
+							id="password-confirm"
+							name="password-confirm"
+							type="password"
+							autocomplete="current-password"
+							required
+							class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-accent-500 focus:outline-none focus:ring-accent-500 sm:text-sm"
+						/>
+					</div>
+				</div> -->
 
 				<!-- TODO: Integrate this remember me code? -->
 				<!--<div class="flex items-center justify-between">
