@@ -1,9 +1,18 @@
 <script>
 	import '../app.css';
-	import AppHeader from '$lib/headers/AppHeader.svelte';
+	import { page } from '$app/stores';
+	import Header from '$lib/headers/Header.svelte';
+	import Footer from '$lib/footers/Footer.svelte';
 </script>
 
-<AppHeader />
-<main class="grow">
+<svelte:head>
+	<title>SvelteKit & Prisma with JWT Auth</title>
+</svelte:head>
+
+<Header />
+
+<main>
 	<slot />
 </main>
+
+<Footer />
